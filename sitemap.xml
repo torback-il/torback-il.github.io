@@ -1,16 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://torback-il.github.io/</loc><priority>1.0</priority></url>
-  <url><loc>https://torback-il.github.io/how-it-works.html</loc><priority>0.9</priority></url>
-  <url><loc>https://torback-il.github.io/pilot.html</loc><priority>0.9</priority></url>
-  <url><loc>https://torback-il.github.io/pricing.html</loc><priority>0.8</priority></url>
-  <url><loc>https://torback-il.github.io/solutions.html</loc><priority>0.8</priority></url>
-  <url><loc>https://torback-il.github.io/solutions-barbers.html</loc><priority>0.7</priority></url>
-  <url><loc>https://torback-il.github.io/solutions-beauty.html</loc><priority>0.7</priority></url>
-  <url><loc>https://torback-il.github.io/solutions-clinics.html</loc><priority>0.7</priority></url>
-  <url><loc>https://torback-il.github.io/solutions-fitness.html</loc><priority>0.7</priority></url>
-  <url><loc>https://torback-il.github.io/sample-report.html</loc><priority>0.7</priority></url>
-  <url><loc>https://torback-il.github.io/about.html</loc><priority>0.6</priority></url>
-  <url><loc>https://torback-il.github.io/faq.html</loc><priority>0.8</priority></url>
-  <url><loc>https://torback-il.github.io/contact.html</loc><priority>0.8</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://torback-il.github.io/</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://torback-il.github.io/en/</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/"/>
+    <priority>1.0</priority></url>
+  <url><loc>https://torback-il.github.io/how-it-works.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/how-it-works.html"/>
+    <priority>0.9</priority></url>
+  <url><loc>https://torback-il.github.io/en/how-it-works.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/how-it-works.html"/>
+    <priority>0.9</priority></url>
+  <url><loc>https://torback-il.github.io/pilot.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/pilot.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/pilot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/pilot.html"/>
+    <priority>0.9</priority></url>
+  <url><loc>https://torback-il.github.io/en/pilot.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/pilot.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/pilot.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/pilot.html"/>
+    <priority>0.9</priority></url>
+  <url><loc>https://torback-il.github.io/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/pricing.html"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://torback-il.github.io/en/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/pricing.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/pricing.html"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://torback-il.github.io/solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions.html"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://torback-il.github.io/en/solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions.html"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://torback-il.github.io/solutions-barbers.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-barbers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-barbers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-barbers.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/en/solutions-barbers.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-barbers.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-barbers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-barbers.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/solutions-beauty.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-beauty.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-beauty.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-beauty.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/en/solutions-beauty.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-beauty.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-beauty.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-beauty.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/solutions-clinics.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-clinics.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-clinics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-clinics.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/en/solutions-clinics.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-clinics.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-clinics.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-clinics.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/solutions-fitness.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-fitness.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/en/solutions-fitness.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/solutions-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/solutions-fitness.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/solutions-fitness.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/sample-report.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/sample-report.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/sample-report.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/sample-report.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/en/sample-report.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/sample-report.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/sample-report.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/sample-report.html"/>
+    <priority>0.7</priority></url>
+  <url><loc>https://torback-il.github.io/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/about.html"/>
+    <priority>0.6</priority></url>
+  <url><loc>https://torback-il.github.io/en/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/about.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/about.html"/>
+    <priority>0.6</priority></url>
+  <url><loc>https://torback-il.github.io/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/faq.html"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://torback-il.github.io/en/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/faq.html"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://torback-il.github.io/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/contact.html"/>
+    <priority>0.8</priority></url>
+  <url><loc>https://torback-il.github.io/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="he" href="https://torback-il.github.io/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://torback-il.github.io/en/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://torback-il.github.io/en/contact.html"/>
+    <priority>0.8</priority></url>
 </urlset>
