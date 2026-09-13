@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TorBack | מחזירים לקוחות ליומן</title>
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Heebo',sans-serif; color:#1a2332; background:#fff; line-height:1.6; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 24px; }
+  header { padding:20px 0; }
+  .nav { display:flex; justify-content:space-between; align-items:center; }
+  .logo { font-size:26px; font-weight:800; color:#0f4c81; letter-spacing:-0.5px; direction:ltr; }
+  .logo .tag { display:block; font-size:12.5px; font-weight:500; color:#7a8b9d; letter-spacing:0; direction:rtl; margin-top:-4px; }
+  .logo span { color:#e8833a; }
+  .nav-cta { background:#0f4c81; color:#fff; padding:10px 22px; border-radius:999px; text-decoration:none; font-weight:600; font-size:15px; }
+  .hero { background:linear-gradient(160deg,#0f4c81 0%,#155e9e 60%,#1b6fae 100%); color:#fff; padding:84px 0 96px; }
+  .badge { display:inline-block; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.35); padding:8px 18px; border-radius:999px; font-size:14.5px; font-weight:500; margin-bottom:26px; }
+  .hero h1 { font-size:46px; font-weight:800; line-height:1.2; max-width:700px; margin-bottom:20px; letter-spacing:-0.5px; }
+  .hero p { font-size:19px; font-weight:300; max-width:640px; opacity:.94; margin-bottom:36px; }
+  .hero-actions { display:flex; gap:14px; flex-wrap:wrap; }
+  .btn-primary { background:#e8833a; color:#fff; padding:15px 34px; border-radius:999px; text-decoration:none; font-weight:700; font-size:17px; }
+  .btn-ghost { border:1.5px solid rgba(255,255,255,.55); color:#fff; padding:15px 30px; border-radius:999px; text-decoration:none; font-weight:500; font-size:16px; }
+  section { padding:72px 0; }
+  .section-title { font-size:32px; font-weight:800; text-align:center; margin-bottom:12px; letter-spacing:-0.4px; }
+  .section-sub { text-align:center; color:#5a6a7d; font-size:17px; max-width:620px; margin:0 auto 48px; }
+  .steps { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .step { background:#f6f8fb; border-radius:18px; padding:32px 26px; border:1px solid #e8edf4; }
+  .step-num { width:44px; height:44px; border-radius:12px; background:#0f4c81; color:#fff; font-weight:800; font-size:20px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
+  .step h3 { font-size:20px; margin-bottom:10px; font-weight:700; }
+  .step p { color:#4c5c70; font-size:15.5px; }
+  .audiences { background:#f6f8fb; }
+  .chips { display:flex; flex-wrap:wrap; gap:12px; justify-content:center; max-width:760px; margin:0 auto; }
+  .chip { background:#fff; border:1.5px solid #dbe4ee; padding:12px 22px; border-radius:999px; font-weight:600; font-size:15.5px; color:#0f4c81; }
+  .pricing-card { max-width:680px; margin:0 auto; background:#fff; border:2px solid #0f4c81; border-radius:24px; overflow:hidden; }
+  .pricing-top { background:#0f4c81; color:#fff; text-align:center; padding:34px 24px 28px; }
+  .pricing-top .free { font-size:38px; font-weight:800; }
+  .pricing-top .note { opacity:.9; font-size:16px; margin-top:6px; }
+  .pricing-body { padding:30px 34px; }
+  .pricing-body ul { list-style:none; }
+  .pricing-body li { padding:9px 0; font-size:16px; color:#33445a; }
+  .pricing-body li::before { content:"✓"; color:#e8833a; font-weight:800; margin-left:10px; }
+  .after { margin-top:22px; padding:18px 20px; background:#fdf3ea; border-radius:14px; font-size:15.5px; color:#7a4a1d; }
+  .faq-item { max-width:720px; margin:0 auto 14px; background:#fff; border:1px solid #e8edf4; border-radius:14px; padding:22px 26px; }
+  .faq-item h3 { font-size:17.5px; margin-bottom:8px; color:#0f4c81; }
+  .faq-item p { color:#4c5c70; font-size:15.5px; }
+  .cta-final { background:linear-gradient(160deg,#0f4c81,#1b6fae); color:#fff; text-align:center; }
+  .cta-final h2 { font-size:34px; font-weight:800; margin-bottom:14px; }
+  .cta-final p { font-size:18px; opacity:.92; max-width:560px; margin:0 auto 32px; }
+  .cta-final .btn-primary { font-size:18px; padding:16px 40px; }
+  .contact-mail { display:block; margin-top:22px; color:#ffd9b8; font-size:17px; font-weight:600; text-decoration:none; }
+  footer { padding:30px 0; text-align:center; color:#8a99ab; font-size:14px; background:#f6f8fb; }
+  @media (max-width:760px) {
+    .hero h1 { font-size:33px; }
+    .steps { grid-template-columns:1fr; }
+    .section-title { font-size:26px; }
+    .hero { padding:60px 0 70px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="logo" dir="ltr">Tor<span>Back</span><small class="tag">מחזירים לקוחות ליומן</small></div>
+    <a class="nav-cta" href="#contact">דברו איתנו</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="badge">שבוע ראשון חינם · בלי כרטיס אשראי · בלי התחייבות</div>
+    <h1>הלקוחות הישנים שלך שווים כסף.<br>אנחנו מחזירים אותם ליומן.</h1>
+    <p>TorBack מכינה עבור עסקים עם תורים — מספרות, קוסמטיקאיות, מאמנים וקליניקות — הודעות חזרה אישיות ללקוחות קודמים שלך. תוך 7 ימים רואים נתונים מהשטח — כמה לקוחות הגיבו, כמה תורים חזרו ומה ההכנסה שהוחזרה — ואז מחליטים אם להמשיך.</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="#contact">מתחילים שבוע חינם</a>
+      <a class="btn-ghost" href="#how">איך זה עובד?</a>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2 class="section-title">איך זה עובד</h2>
+    <p class="section-sub">שלושה צעדים פשוטים, בלי מערכות מסובכות ובלי עבודה מצידך.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>אתם מעבירים רשימה</h3>
+        <p>רשימה פשוטה של לקוחות קודמים שהעסק רשאי לפנות אליהם — שם וטלפון, בלי פרטים מיותרים.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>אנחנו מנסחים הודעות</h3>
+        <p>הודעות חזרה מותאמות לעסק שלך, בטון אישי ומכבד, עם זיהוי ברור של העסק ואפשרות הסרה בכל הודעה.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>אתם קוטפים תורים</h3>
+        <p>ההודעות יוצאות מהעסק שלך ללקוחות שלך — ובסוף השבוע אתם רואים בדיוק כמה מהם חזרו לקבוע תור.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="audiences">
+  <div class="wrap">
+    <h2 class="section-title">למי זה מתאים</h2>
+    <p class="section-sub">כל עסק שחי מהיומן — ויש לו לקוחות שפשוט לא חזרו.</p>
+    <div class="chips">
+      <div class="chip">מספרות וברברים</div>
+      <div class="chip">קוסמטיקאיות ומכוני יופי</div>
+      <div class="chip">מאמני כושר אישיים</div>
+      <div class="chip">קליניקות טיפול</div>
+      <div class="chip">עיסוי ורפלקסולוגיה</div>
+      <div class="chip">מורי נהיגה</div>
+      <div class="chip">סטודיו לייעוץ וטיפול</div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <h2 class="section-title">שבוע ראשון — חינם. נקודה.</h2>
+    <p class="section-sub">שבוע אחד של בדיקה מדידה: בסוף 7 הימים מקבלים נתונים ברורים — כמה לקוחות הגיבו, כמה תורים נקבעו ומה ההכנסה שחזרה — ורק אז מחליטים אם שווה להמשיך.</p>
+    <div class="pricing-card">
+      <div class="pricing-top">
+        <div class="free">0 ₪</div>
+        <div class="note">שבוע הפיילוט הראשון · בלי כרטיס אשראי · בלי התחייבות</div>
+      </div>
+      <div class="pricing-body">
+        <ul>
+          <li>ניסוח הודעות חזרה אישיות ללקוחות הקודמים שלך</li>
+          <li>תוכנית שיגור מלאה לשבוע, מותאמת לעסק שלך</li>
+          <li>נוסח מכובד וחוקי, עם אפשרות הסרה בכל הודעה</li>
+          <li>דוח תוצאות מדיד בסוף 7 הימים: תגובות, תורים שנקבעו והכנסה שהוחזרה</li>
+        </ul>
+        <div class="after">מהשבוע השני: 250 ₪ לשבוע או מסלול חודשי — רק אם ראיתם בנתונים שהשירות שווה את עלותו ובחרתם במפורש להמשיך. אין חידוש אוטומטי ואין חיוב בשיטת "שכחתי לבטל".</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 class="section-title">שאלות נפוצות</h2>
+    <p class="section-sub"></p>
+    <div class="faq-item">
+      <h3>מי שולח את ההודעות בפועל?</h3>
+      <p>אתם, מהעסק שלכם וללקוחות שלכם. אנחנו מכינים את הנוסחים, התזמון והתוכנית — השליחה נשארת בידיים שלכם.</p>
+    </div>
+    <div class="faq-item">
+      <h3>זה חוקי?</h3>
+      <p>אנחנו עובדים רק מול לקוחות קודמים שהעסק רשאי לפנות אליהם, עם זיהוי ברור של העסק ואפשרות הסרה מפורשת בכל הודעה. לא קונים רשימות ולא פונים לאנשים זרים.</p>
+    </div>
+    <div class="faq-item">
+      <h3>כמה זמן זה לוקח?</h3>
+      <p>עד 7 ימים מרגע שהעברתם את הרשימה — אתם מקבלים הודעות מוכנות לשליחה ותוכנית שיגור לשבוע.</p>
+    </div>
+    <div class="faq-item">
+      <h3>ומה אם לא חזרו לקוחות?</h3>
+      <p>בשבוע הראשון לא שילמתם כלום, ואנחנו לא מבטיחים תוצאה מסוימת. מה שכן מובטח: בסוף 7 הימים יהיו לכם נתונים מדויקים על מה שקרה בשטח — וההחלטה על המשך נשארת בידיים שלכם.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final" id="contact">
+  <div class="wrap">
+    <h2>מוכנים להחזיר לקוחות ליומן?</h2>
+    <p>כתבו לנו כמה מילים על העסק שלכם, ונחזור אליכם עם תוכנית לשבוע החינמי.</p>
+    <a class="btn-primary" href="mailto:imy584@mail.instinct.com">מתחילים — שבוע ראשון חינם</a>
+    <a class="contact-mail" href="mailto:imy584@mail.instinct.com">imy584@mail.instinct.com</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">TorBack · שירות החזרת לקוחות לעסקים עם תורים · שבוע ראשון חינם</div>
+</footer>
+</body>
+</html>
